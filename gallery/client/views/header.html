@@ -1,0 +1,24 @@
+<template name="header">
+<br/>
+<h1>The Gallery</h1>
+<br/>
+<header class="navbar">
+  <div class="navbar-inner" style="" >
+	  <div class="nav-collapse collapse">
+		<ul class="nav">
+			<li><input class="btn btn-primary" type="button" value="View Gallery" name="view" id="view" /></li>
+		</ul>
+		<ul class="nav">
+			 {{#if currentUser}}
+				<li><input class="btn btn-primary" type="button" value="Add Picture" name="add" id="add" /></li>
+			 {{else}}
+				<li><a>Sign In to Add pictures </a></li>
+			 {{/if}}
+		</ul>
+		<ul class="nav pull-right">
+		  <li>{{> loginButtons}}</li>
+		</ul>
+	  </div>
+  </div>
+</header>
+</template>

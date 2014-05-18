@@ -1,0 +1,12 @@
+<template name="pictureItem">
+  <div class="pictures" style="float:left;margin:5px;border:1px solid grey;height:400px;background-color:#FFFFFF;">
+    <div class="picture-content" style="margin:6px;background-color:#FFFFFF;">
+      <h3>{{title}}</h3>
+      <img  style="max-height:300px;max-width:350px;" src="{{url}}"/>
+      <div><b>{{author}}</b> </div> 
+	  <div style="width:340px;margin:2px;overflow-y:scroll;">
+	   <p>{{text}}</p>
+	   </div>
+   </div>
+  </div>
+</template>

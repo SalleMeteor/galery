@@ -1,0 +1,12 @@
+<template name="home">
+<div class="container" style="background-color:#AFDAF5;" >
+	{{> header}}
+    <div id="main" class="row-fluid" style="margin-left:15px;">
+	{{#if page "pictureSubmit"}} 
+		{{> pictureSubmit}}
+    {{else}}
+      {{> picturesList}}
+    {{/if}}
+    </div>
+</div>
+</template>
